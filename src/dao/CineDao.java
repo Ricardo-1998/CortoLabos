@@ -76,12 +76,13 @@ public class CineDao implements metodos<pelicula>{
         try{
             System.out.println(c.getNombre());
             ps = con.getCnx().prepareStatement(SQL_UPDATE);
-            ps.setString(1, c.getNombre());
-            ps.setString(2, c.getDirector());
-            ps.setString(3, c.getPais());
-            ps.setString(4, c.getClasificacion());
-            ps.setInt(5, c.getAnio());
-            ps.setBoolean(6, c.getEn_proyeccion());
+           
+            ps.setString(1, c.getDirector());
+            ps.setString(2, c.getPais());
+            ps.setString(3, c.getClasificacion());
+            ps.setInt(4, c.getAnio());
+            ps.setBoolean(5, c.getEn_proyeccion());
+            ps.setString(6, c.getNombre());
            
             if(ps.executeUpdate() > 0){
                 return true;
