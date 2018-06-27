@@ -76,7 +76,7 @@ public class Consulta extends JFrame{
         container.add(eliminar);
         
         container.add(table);
-        setSize(600,600);
+        setSize(600,500);
         eventos();
         
     }
@@ -137,7 +137,7 @@ public class Consulta extends JFrame{
         
         
         
-        buscar.setBounds(400, 210, ANCHOC, ALTOC);
+        buscar.setBounds(440, 210, ANCHOC, ALTOC);
         insertar.setBounds(10, 210, ANCHOC, ALTOC);
         actualizar.setBounds(150, 210, ANCHOC, ALTOC);
         eliminar.setBounds(300, 210, ANCHOC, ALTOC);
